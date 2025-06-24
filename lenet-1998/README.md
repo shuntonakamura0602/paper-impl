@@ -23,7 +23,6 @@ python train.py
 - `model.py` — LeNet-5 architecture
 - `train.py` — training loop
 - `main.py` — entry point
-- `notebooks/lenet_mnist_demo.ipynb` — exploratory notebook
 
 ## 🧠 What I Learned
 - How CNNs process image data

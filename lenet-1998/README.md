@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # paper-impl
 =======
 
@@ -30,4 +29,3 @@ python train.py
 - How CNNs process image data
 - How to build and train a model from scratch
 - Importance of reproducibility and modular code
->>>>>>> 0546ddb (Initial commit: LeNet implementation on MNIST)

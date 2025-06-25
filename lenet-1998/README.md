@@ -1,5 +1,4 @@
 # paper-impl
-=======
 
 # LeNet-5 on MNIST (PyTorch)
 

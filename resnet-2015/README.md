@@ -32,6 +32,7 @@ $$\frac{\partial L}{\partial x_l} = \frac{\partial L} {\partial x_{l+1}} ・\fra
 $$\frac{\partial x_{l+1}}{\partial x_l} = f'(W_{l+1}・x_l)・W_{l+1}$$
 となる。つまり勾配は一つ前の層に伝播するたびに活性化関数の微分f'と重みWが乗算される。  
 これが50層繰り返されるとどうなるか  
+
 $$\frac{\partial L}{\partial x_1} = \frac{\partial L}{\partial x_{50}}・(f'_{49}W50)・(f'_{48}W_{49})・・・・(f'_1W_2)$$
 
 活性化関数を微分したものは1よりも小さいものが多いので、ほぼ0になってしまう  

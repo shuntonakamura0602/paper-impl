@@ -173,6 +173,9 @@ class ResNet(nn.Module):
         # Zero-initialize the last BN in each residual branch,
         # so that the residual branch starts with zeros, and each residual block behaves like an identity.
         # This improves the model by 0.2~0.3% according to https://arxiv.org/abs/1706.02677
+        # バッチ正規化層の重みを0にすると、その層の出力は常に0になる。
+        # これにより、学習開始時点では、残差ブロックの分岐経路からの出力が0になり、ブロック全体が恒等写像のように振る舞う。
+        # この安全な初期状態たら学習を始めることで深いネットワークでも勾配が不安定になるのを防ぎ、学習の序盤をスムーズに進めることができる。
         if zero_init_residual:
             for m in self.modules():
                 if isinstance(m, Bottleneck) and m.bn3.weight is not None:

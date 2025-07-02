@@ -60,7 +60,7 @@ class BasicBlock(nn.Module):
         out = self.conv2(out)
         out = self.bn2(out)
 
-        if self.downsmaple is not None:
+        if self.downsample is not None:
             identity = self.downsample(x)
         
         out += identity

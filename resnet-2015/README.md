@@ -8,10 +8,10 @@
 google colab
 
 ## 実行方法
-python main.py --epochs 50 --batch_size 128
+python main.py --epochs 10 --batch_size 128
 
 ## 実験結果
-CIFAR-10データセットで50エポック学習させた結果、以下の性能を達成しました。
+CIFAR-10データセットで10エポック学習させた結果、以下の性能を達成しました。
 - 最終的な精度 : 74.75%
 ## ファイル
 - model.py - resnetのアーキテクチャ

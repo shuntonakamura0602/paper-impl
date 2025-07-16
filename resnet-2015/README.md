@@ -1,5 +1,5 @@
 # paper-impl
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shuntonakamura0602/paper-impl/blob/main/resnet-2015/ReSNet_2015.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shuntonakamura0602/paper-impl/blob/main/resnet-2015/ResNet_2015.ipynb)
 ## 概要
 本リポジトリは、Kaiming Heらによる論文「Deep Residual Learning for Image Recognition」(2015) に基づき、ResNetアーキテクチャをゼロから実装したものです。  
 目的は、現代的なCNNにおける重要な概念であるResidual Connectionの理論的背景と、その効果をコードレベルで深く理解することです。本実装はCIFAR-10データセットを用いて学習・評価を行いました。

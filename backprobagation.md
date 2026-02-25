@@ -1,1 +1,1 @@
-![説明文](images/backpropagation.png)
+![説明文](images/backpropagation.jpg)

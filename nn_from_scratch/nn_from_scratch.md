@@ -16,5 +16,3 @@ $$\frac{\partial L}{\partial W_{2}}=\frac{1}{N}A_{1}^T(Z_{2}-Y)$$
 ```python
 dW2 = a1.T @ dz2 / len(X)
 ```
-
-![説明文](images/nn_from_scratch.jpg)

@@ -1,1 +1,0 @@
-![説明文](images/nn_from_scratch.jpg)

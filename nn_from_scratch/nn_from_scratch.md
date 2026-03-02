@@ -11,8 +11,11 @@ $$\frac{\partial Li}{\partial z_{2,i}}=\frac{1}{N}(z_{2,i}-y_{i})$$
 $$z_{2,i}=\sum_{j=1}^{N}a_{1,i,j}W_{2,j}+b_{2}$$
 W2jについての勾配は
 $$\frac{\partial L}{\partial W_{2,j}}=\sum_{i=1}^{N}\frac{\partial L}{\partial z_{2,i}}\frac{\partial z_{2,i}}{\partial W_{2,j}}=\sum_{i=1}^{N}\frac{1}{N}(z_{2,i}-y_{i})a_{1,i,j}$$
+
 $$\frac{\partial L}{\partial W_{2}}=\frac{1}{N}A_{1}^T(Z_{2}-Y)$$
 これがそのままコードになっている   
 ```python
 dW2 = a1.T @ dz2 / len(X)
 ```
+
+## 後はimages/nn_from_scratchを参照
